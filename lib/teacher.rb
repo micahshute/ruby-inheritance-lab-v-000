@@ -5,4 +5,9 @@ class Teacher < User
   def initialize
   end
 
+  def teach
+    rand = Random.new
+    KNOWLEDGE[rand.rand(KNOWLEDGE.length)]
+  end
+
 end
